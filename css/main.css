@@ -1,0 +1,317 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* .wrapper {
+    max-width: 1200px;
+} */
+
+.bg-dark {
+    background-color: #222;
+}
+
+.wrapper {
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    padding: 1.25rem;
+    font-size: 1.05rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #c78c06;
+}
+
+nav ul li.active {
+    background-color: #c78c06;
+}
+
+nav ul li.active a {
+    color: #222;
+}
+
+.logo-container {
+    padding: 1rem 0;
+    background-color: #c78c06;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar label {
+    display: none;
+}
+
+#search {
+    width: 100%;
+    height: 42px;
+    padding-left: .5rem;
+}
+
+.search-bar button {
+    color: #c78c06;
+    border: 1px solid #c78c06;
+    padding: 3px 5px;
+    background-color: #222;
+}
+
+.search-bar button span {
+    font-size: 2rem;
+}
+
+/* Hero style starts here */
+
+#hero {
+    background-image: url(../images/main-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 4.5rem 0;
+}
+
+#hero .wrapper {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-text h1 {
+    font-size: 4.5rem;
+    color: white;
+    line-height: 1.5;
+}
+
+.hero-text p {
+    color: white;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.hero-text a {
+    background-color: #c78c06;
+    color: #222;
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: 1.5rem;
+}
+
+.hero-text a span {
+    font-size: 3rem;
+}
+
+/* Here starts about us section */
+
+#about-us .wrapper {
+    background-color: #ffe6ac;
+}
+
+#about-us .wrapper h2 {
+    font-size: 2.75rem;
+    margin: 1.5rem 0;
+}
+
+#about-us .wrapper p {
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+#about-us img {
+    width: 100%;
+    height: auto;
+}
+
+/* Here starts our services section */
+
+#services h2 {
+    font-size: 2.75rem;
+    margin: 1.5rem 0;
+}
+
+#services img {
+    width: 100%;
+    height: auto;
+}
+
+.grid-item {
+    background-color: #ffe6ac;
+    margin-bottom: 1rem;
+}
+
+.grid-item-content {
+    padding: 1rem;
+}
+
+.grid-item-content h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.grid-item-content p {
+    line-height: 1.3;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+}
+
+.grid-item-content a {
+    text-decoration: none;
+    background-color: #222;
+    color: white;
+    font-size: 1.25rem;
+}
+
+/* Here starts our vision section */
+
+#vision-banner {
+    background-image: url(../images/vision.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.wrapper.vision-text h3 {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}
+
+.wrapper.vision-text p {
+    font-size: .9rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.wrapper.vision-text a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    background-color: #222;
+    color: white;
+    border: 1px solid #c78c06;
+}
+
+/* Here starts our team section */
+
+#our-team h2 {
+    font-size: 2.75rem;
+    margin: 1.5rem 0;
+}
+
+.team-member-item {
+    background-color: #ffe6ac;
+    margin-bottom: 1rem;
+}
+
+.team-member-item-content {
+    padding: 1rem;
+}
+
+.team-member-item-content h3 {
+    font-size: 2rem;
+}
+
+.team-member-item-content h4 {
+    margin: .5rem 0;
+    padding-bottom: 0.2rem;
+    border-bottom: 2px solid #c78c06;
+}
+
+.team-member-item-content p {
+    margin: 1rem 0;
+    line-height: 1.4;
+}
+
+.team-member-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* here starts contact us section */
+
+#contact h2 {
+    font-size: 2.75rem;
+    margin: 2.25rem 0;
+}
+
+.contact-wrapper h3 {
+    font-size: 2rem;
+    margin: 1.25rem 0;
+}
+
+.contact-container label,
+.contact-container input,
+.contact-container textarea {
+    display: block;
+}
+
+.contact-container input, .contact-container textarea {
+    width: 100%;
+    margin-bottom: .7rem;
+}
+
+.contact-container label {
+    margin-bottom: .5rem;
+}
+
+.contact-container input {
+    height: 35px;
+}
+
+.contact-container textarea {
+    height: 150px;
+}
+
+.contact-container button {
+    background-color: #222;
+    color: #c78c06;
+    font-size: 1.3rem;
+    margin: .5rem 0;
+    padding: .2rem;
+}
+
+/* here starts hours opartion section */
+
+.operation-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+th {
+    font-weight: normal;
+    background-color: #ffe6ac;
+}
+
+/* here starts location section */
+
+.map-container iframe {
+    width: 100%;
+    height: 500px;
+}
+
+footer {
+    color: #c78c06;
+}
+
+footer p:nth-child(1) {
+    margin: 1.25rem 0;;
+}
+
+footer span {
+    text-decoration: underline;
+}

@@ -24,19 +24,22 @@
 <body>
     <header class="bg-dark">
         <div class="wrapper">
-            <img id="logo" src="images/logo.png" alt="company branding">
             <nav>
+                <div class="logo-container">
+                    <img id="logo" src="images/logo.png" alt="company branding">
+                </div>
+
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Team</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
 
-                <form action="search" method="post">
+                <form class="search-bar" action="search" method="post">
                     <label for="search">Search</label>
-                    <input id="search" type="search">
+                    <input id="search" type="search" placeholder="Search">
                     <button type="submit">
                         <span class="material-symbols-outlined">search</span>
                     </button>
@@ -62,7 +65,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="about-us">
             <div class="wrapper">
                 <div class="flexbox-container">
                     <div class="col1">
@@ -82,65 +85,87 @@
             </div>
         </section>
 
-        <section>
+        <section id="services">
             <div class="wrapper">
                 <h2>Our Services</h2>
 
                 <div class="grid-container">
                     <div class="grid-item">
                         <img src="images/digital.jpg" alt="digital devices photo">
-                        <h3>Digital Transforming</h3>
-                        <p>Nullam ex justo, pharetra sodales hendrerit ut, condimentum at risus. Nam quis mauris in
-                            felis mollis convallis ac vel erat. Nulla non maximus magna, at bibendum quam. Maecenas
-                            ultricies nulla nec pulvinar molestie.</p>
-                        <a href="#">Digital Plans
-                            <span class="material-symbols-outlined">arrow_right</span>
-                        </a>
+                        <div class="grid-item-content">
+                            <h3>Digital Transformation</h3>
+                            <p>Nullam ex justo, pharetra sodales hendrerit ut, condimentum at risus. Nam quis mauris in
+                                felis mollis convallis ac vel erat. Nulla non maximus magna, at bibendum quam. Maecenas
+                                ultricies nulla nec pulvinar molestie.</p>
+                            <a href="#">Digital Plans
+                                <span class="material-symbols-outlined">arrow_right</span>
+                            </a>
+                        </div>
+
                     </div>
-                
+
 
                     <div class="grid-item">
                         <img src="images/marketing.jpg" alt="laptop photo">
-                        <h3>Marketing</h3>
-                        <p>Quisque mattis vitae quam ac condimentum. Nullam commodo fringilla orci, dictum mattis nisi
-                            luctus sit amet. Vivamus interdum purus tortor, eu pellentesque risus ullamcorper et. Cras in
-                            mollis ipsum, vel tincidunt libero.</p>
-                        <a href="#">Marketing Plans
-                            <span class="material-symbols-outlined">arrow_right</span>
-                        </a>
+                        <div class="grid-item-content">
+                            <h3>Marketing</h3>
+                            <p>Quisque mattis vitae quam ac condimentum. Nullam commodo fringilla orci, dictum mattis
+                                nisi
+                                luctus sit amet. Vivamus interdum purus tortor, eu pellentesque risus ullamcorper et.
+                                Cras
+                                in
+                                mollis ipsum, vel tincidunt libero.</p>
+                            <a href="#">Marketing Plans
+                                <span class="material-symbols-outlined">arrow_right</span>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="grid-item">
                         <img src="images/video.jpg" alt="phone photo with youtube logo">
-                        <h3>Video Production</h3>
-                        <p>orem ipsum dolor sit, amet consectetur adipisicing elit. Et autem repellendus impedit ut facere,
-                            omnis numquam, quisquam soluta sapiente unde ab, ea optio cupiditate? Veniam exercitationem quas
-                            adipisci vero laboriosam?</p>
-                        <a href="#">Video Plans
-                            <span class="material-symbols-outlined">arrow_right</span>
-                        </a>
+                        <div class="grid-item-content">
+                            <h3>Video Production</h3>
+                            <p>orem ipsum dolor sit, amet consectetur adipisicing elit. Et autem repellendus impedit ut
+                                facere,
+                                omnis numquam, quisquam soluta sapiente unde ab, ea optio cupiditate? Veniam
+                                exercitationem
+                                quas
+                                adipisci vero laboriosam?</p>
+                            <a href="#">Video Plans
+                                <span class="material-symbols-outlined">arrow_right</span>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="grid-item">
                         <img src="images/web.jpg" alt="phone photo">
-                        <h3>Web Development</h3>
-                        <p>orem ipsum dolor sit, amet consectetur adipisicing elit. Et autem repellendus impedit ut facere,
-                            omnis numquam, quisquam soluta sapiente unde ab, ea optio cupiditate? Veniam exercitationem quas
-                            adipisci vero laboriosam?</p>
-                        <a href="#">Web Plans
-                            <span class="material-symbols-outlined">arrow_right</span>
-                        </a>
+                        <div class="grid-item-content">
+                            <h3>Web Development</h3>
+                            <p>orem ipsum dolor sit, amet consectetur adipisicing elit. Et autem repellendus impedit ut
+                                facere,
+                                omnis numquam, quisquam soluta sapiente unde ab, ea optio cupiditate? Veniam
+                                exercitationem
+                                quas
+                                adipisci vero laboriosam?</p>
+                            <a href="#">Web Plans
+                                <span class="material-symbols-outlined">arrow_right</span>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="grid-item">
                         <img src="images/print.jpg" alt="street photo">
-                        <h3>Print</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus illum laborum perferendis
-                            officia culpa sit illo unde vero, deleniti, est quibusdam eius officiis consectetur minima
-                            obcaecati esse blanditiis ducimus.</p>
-                        <a href="#">Print Plans
-                            <span class="material-symbols-outlined">arrow_right</span>
-                        </a>
+                        <div class="grid-item-content">
+                            <h3>Print</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus illum laborum
+                                perferendis
+                                officia culpa sit illo unde vero, deleniti, est quibusdam eius officiis consectetur
+                                minima
+                                obcaecati esse blanditiis ducimus.</p>
+                            <a href="#">Print Plans
+                                <span class="material-symbols-outlined">arrow_right</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -158,102 +183,108 @@
             </div>
         </section>
 
-        <section>
+        <section id="our-team">
             <div class="wrapper">
-            <h2>Our Team</h2>
-            <div class="team-member-wrapper">
+                <h2>Our Team</h2>
                 <div class="team-member-container">
-                    <div>
-                        <img src="images/john.jpg" alt="photo of John">
-                    </div>
+                    <div class="team-member-item">
 
-                    <div>
-                        <h3>John Doe</h3>
-                        <h4>CEO and Co-owner</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi commodi modi sit voluptates
-                            nam.
-                            Officiis illo facere ipsum et natus ad laboriosam sunt maiores eum accusamus? Velit quam ea
-                            soluta.
-                        </p>
+                        <img src="images/john.jpg" alt="photo of John">
+
+
+                        <div class="team-member-item-content">
+                            <h3>John Doe</h3>
+                            <h4>CEO and Co-owner</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi commodi modi sit
+                                voluptates
+                                nam.
+                                Officiis illo facere ipsum et natus ad laboriosam sunt maiores eum accusamus? Velit quam
+                                ea
+                                soluta.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="team-member-container">
-                    <div>
+                    <div class="team-member-item">
+
                         <img src="images/bob.jpg" alt="photo of Bob">
-                    </div>
-                    <div>
-                        <h3>Bob Rite</h3>
-                        <h4>CFO and Co-owner</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi commodi modi sit voluptates
-                            nam.
-                            Officiis illo facere ipsum et natus ad laboriosam sunt maiores eum accusamus? Velit quam ea
-                            soluta.
-                        </p>
+
+                        <div class="team-member-item-content">
+                            <h3>Bob Rite</h3>
+                            <h4>CFO and Co-owner</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi commodi modi sit
+                                voluptates
+                                nam.
+                                Officiis illo facere ipsum et natus ad laboriosam sunt maiores eum accusamus? Velit quam
+                                ea
+                                soluta.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
         </section>
 
-        <section>
+        <section id="contact">
             <div class="wrapper">
-            <h2>Contact Us</h2>
-            <div class="contact-wrapper">
+                <h2>Contact Us</h2>
+                <div class="contact-wrapper">
 
-                <div class="contact-container">
-                    <h3>Send us a message</h3>
-                    <form action="senmessage" method="post">
-                        <label for="fullname">Full Name</label>
-                        <input id="fullname" type="text">
+                    <div class="contact-container">
+                        <h3>Send us a message</h3>
+                        <form action="senmessage" method="post">
+                            <label for="fullname">Full Name</label>
+                            <input id="fullname" type="text">
 
-                        <label for="emailadress">Email</label>
-                        <input id="emailadress" type="email">
+                            <label for="emailadress">Email</label>
+                            <input id="emailadress" type="email">
 
-                        <label for="writemessage">Message</label>
-                        <input id="writemessage" type="text">
+                            <label for="writemessage">Message</label>
+                            <textarea id="writemessage"></textarea>
 
-                        <button type="submit">send</button>
-                    </form>
-                </div>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
 
-                <div class="map-container">
-                    <h3>Location</h3>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3519.631550875326!2d-75.76063267307929!3d45.34837187107238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1salgonquin%20college!5e1!3m2!1sen!2sca!4v1753130489188!5m2!1sen!2sca"
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                    <div class="operation-container">
+                        <h3>Hours of operation</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Days</th>
+                                    <th>Hours</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monday - Friday</td>
+                                    <td>9 AM - 6 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday - Sunday</td>
+                                    <td>Closed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-                <div class="operation-container">
-                    <h3>Hours of operation</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Days</th>
-                                <th>Hours</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Monday - Friday</td>
-                                <td>9AM - 6PM</td>
-                            </tr>
-                            <tr>
-                                <td>Saturday - Sunday</td>
-                                <td>Closed</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="map-container">
+                        <h3>Location</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3519.631550875326!2d-75.76063267307929!3d45.34837187107238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1salgonquin%20college!5e1!3m2!1sen!2sca!4v1753130489188!5m2!1sen!2sca"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    
                 </div>
             </div>
-        </div>
         </section>
     </main>
 
     <footer class="bg-dark">
         <div class="wrapper">
             <p>&copy; Copyright Three Star Media, 2020</p>
-            <p>All images are taken from Unsplash</p>
+            <p>All images are taken from <span>Unsplash</span></p>
         </div>
     </footer>
 </body>
