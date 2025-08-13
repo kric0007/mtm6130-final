@@ -10,10 +10,6 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-/* .wrapper {
-    max-width: 1200px;
-} */
-
 .bg-dark {
     background-color: #222;
 }
@@ -107,6 +103,8 @@ nav ul li.active a {
     text-decoration: none;
     font-size: 1.25rem;
     padding: 1.5rem;
+    display: inline-flex;
+    align-items: center;
 }
 
 .hero-text a span {
@@ -115,7 +113,7 @@ nav ul li.active a {
 
 /* Here starts about us section */
 
-#about-us .wrapper {
+#about-us {
     background-color: #ffe6ac;
 }
 
@@ -170,7 +168,14 @@ nav ul li.active a {
     text-decoration: none;
     background-color: #222;
     color: white;
-    font-size: 1.25rem;
+    font-size: 1.4rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+.grid-item-content a span {
+    font-size: 3rem;
 }
 
 /* Here starts our vision section */
@@ -199,6 +204,14 @@ nav ul li.active a {
     background-color: #222;
     color: white;
     border: 1px solid #c78c06;
+    display: inline-flex;
+    align-items: center;
+    padding: 2rem;
+    font-size: 1.4rem;
+}
+
+.wrapper.vision-text a span {
+    font-size: 3rem;
 }
 
 /* Here starts our team section */
@@ -255,7 +268,8 @@ nav ul li.active a {
     display: block;
 }
 
-.contact-container input, .contact-container textarea {
+.contact-container input,
+.contact-container textarea {
     width: 100%;
     margin-bottom: .7rem;
 }
@@ -287,7 +301,8 @@ nav ul li.active a {
     border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
     border: 1px solid black;
     padding: 1rem;
 }
@@ -309,9 +324,142 @@ footer {
 }
 
 footer p:nth-child(1) {
-    margin: 1.25rem 0;;
+    margin: 1.25rem 0;
+    ;
 }
 
 footer span {
     text-decoration: underline;
+}
+
+/* here starts media query */
+
+@media (min-width: 760px) {
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* here starts nav bar */
+    nav .logo-container {
+        background-color: transparent;
+    }
+
+    nav .logo-container img {
+        width: 70px;
+        height: auto;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        padding: 1rem 2rem;
+    }
+
+    nav .search-bar {
+        display: flex;
+        align-items: center;
+    }
+
+    /* here starts abou us section */
+    .flexbox-container {
+        display: flex;
+    }
+
+    .flexbox-container .col1 {
+        flex: 1;
+    }
+
+    .flexbox-container .col2 {
+        flex: 1;
+        padding: 0 1rem;
+        font-size: .9rem;
+    }
+
+    #about-us .wrapper h2 {
+        margin-top: 0;
+    }
+
+    /* here starts our services section */
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .grid-container> :nth-child(1),
+    .grid-container> :nth-child(2) {
+        grid-column: span 3;
+    }
+
+    .grid-container> :nth-child(3),
+    .grid-container> :nth-child(4),
+    .grid-container> :nth-child(5) {
+        grid-column: span 2;
+    }
+
+    .grid-item {
+        margin: 0;
+    }
+
+    .grid-item-content a {
+       width: 100%; 
+       justify-content: center;
+    }
+
+    /* here starts our team section */
+    .team-member-item {
+        display: flex;
+        margin: 0;
+    }
+
+    .team-member-item img {
+        width: 50%;
+    }
+
+    .team-member-item:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    /* here starts contact us section */
+    #contact h2 {
+        margin: 1.5rem 0;
+    }
+
+    .contact-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact-container {
+        order: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 50%;
+        padding-right: 1rem;
+    }
+
+    .operation-container {
+        order: 2;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 100%;
+    }
+
+    .map-container {
+        order: 1;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 50%;
+    }
 }
